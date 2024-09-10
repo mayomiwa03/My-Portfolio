@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 83.4%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.body {
+  color: #fff;
+  background-color: black;
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.bluu {
+  color: #1c7ed6;
+}
+.header {
+  padding: 2rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio {
+  color: #1c7ed6;
+
+  font-family: Playwrite Cuba;
+  font-size: 3rem;
+}
+.nav {
+  /* padding: 0 10rem; */
+  font-size: 1.6rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  align-items: center;
+  list-style: none;
+}
+.nav-link:link,
+.nav-link:visited {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #1c7ed6;
+  text-decoration: underline;
+  text-underline-offset: 0.8rem;
+}
+/* mobile nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4rem;
+  width: 3.5rem;
+  color: #1c7ed6;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  padding: 20rem 10rem;
+  gap: 5rem;
+  height: 100vh;
+}
+.hero-image {
+  width: 40rem; /* Adjust the width as needed */
+  height: 50rem; /* Adjust the height as needed to create the oval effect */
+  border-radius: 50%; /* Makes the image oval */
+  object-fit: cover; /* Ensures the image covers the oval shape */
+}
+.hero-wu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.h-h {
+  font-size: 3.5rem;
+}
+.h-hh {
+  font-size: 3.5rem;
+}
+.h-t {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-link:link,
+.social-link:visited {
+  color: #1c7ed6;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+.hero-btn {
+  font-size: 2rem;
+  font-weight: 500;
+  border: 3px solid #1c7ed6;
+  border-radius: 9px;
+  background: transparent;
+  text-decoration: none;
+  color: #1c7ed6;
+  position: relative;
+  padding: 1rem 3rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 3px solid #1c7ed6;
+  color: #eee;
+}
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -30px;
+  width: 0;
+  height: 100%;
+  background-color: #1c7ed6;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: width 0.5s;
+}
+.hero-btn:hover::before {
+  width: 130%;
+}
+/* Services */
+.services {
+  background-color: #212529;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.serv-head {
+  padding-top: 5rem;
+  /* padding-left: 5rem; */
+  font-size: 3rem;
+}
+.serv-flx-con {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+  padding: 10rem 5rem;
+}
+.serv-flx {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  border-radius: 9px;
+}
+.serv-icon-wrap:hover {
+  transform: translateY(-2px);
+}
+.serv-icon {
+  padding: 1.5rem;
+  /* color: #fff; */
+  background-color: #1c7ed6;
+  border-radius: 9px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sfh {
+  font-size: 2.5rem;
+}
+.sft {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.serv-link:link,
+.serv-link:visited {
+  text-decoration: none;
+  color: #1c7ed6;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/* SKILLS */
+.skills {
+  margin: 5rem auto 15rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.ski-head {
+  /* padding-top: 5rem; */
+  /* padding-left: 5rem; */
+  font-size: 3rem;
+}
+.skills-flx-con {
+  margin: 0 auto;
+  border-radius: 9px;
+  width: 60%;
+  background-color: #1c7ed6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7%;
+  row-gap: 2rem;
+
+  padding: 2rem 4rem 3.5rem 4rem;
+  max-width: 70rem;
+}
+
+.skills-flx {
+  background-color: #212529;
+  margin: 0 auto;
+  padding: 2rem 4rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 9px;
+  cursor: pointer;
+
+  box-shadow: 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.skills-flx:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+.skills-img {
+  width: 70px;
+  height: 70px;
+}
+.skill-text {
+  font-weight: 600;
+}
+/* Projects */
+.projects {
+  background-color: #212529;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+.projects-head {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-size: 3rem;
+}
+.projects-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects-flx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.projects-img {
+  /* border: 4px solid #1c7ed6; */
+  border-radius: 9px;
+  width: 36rem;
+  height: 48rem;
+}
+.projects-img:hover {
+  box-shadow: 4px 10px 5px rgb(128, 125, 125);
+  transform: translateY(-2px);
+}
+.projects-link:link,
+.projects-link:visited {
+  text-decoration: none;
+  color: #1c7ed6;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.projects-link:hover,
+.projects-link:active {
+  transform: translateY(-2px);
+  font-weight: 700;
+}
+
+/* FOoter */
+.footer {
+  /* margin: 0 auto; */
+  background-color: #1c7ed6;
+  padding: 5rem auto;
+}
+.footer-con {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  padding: 5rem;
+}
+.footer-socials {
+}
+.footer-social-icon {
+  color: #000;
+  height: 4rem;
+  width: 4rem;
+}
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  list-style: none;
+}
+.footer-social-link:link,
+.footer-social-link:visited {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.footer-flx {
+}
+.footer-nav {
+}
+.footer-navlist {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+}
+.footer-navlink:link,
+.footer-navlink:visited {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.footer-flxx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright {
+  color: #000;
+  font-weight: 600;
+}
