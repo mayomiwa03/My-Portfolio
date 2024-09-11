@@ -85,12 +85,20 @@
     padding: 2rem 1rem;
   }
   .hero {
-    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 5rem 3rem 10rem 3rem;
     margin-bottom: 2rem;
+    height: 90rem;
+    /* margin-top: 10rem; */
   }
   .hero-image {
     width: 25rem; /* Adjust the width as needed */
     height: 30rem;
+  }
+  .hero-wu {
+    gap: 0.8rem;
   }
   .services {
     margin: 0 1rem;
