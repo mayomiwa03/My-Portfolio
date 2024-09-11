@@ -78,15 +78,28 @@
   }
 }
 @media (max-width: 75em) {
+  html {
+    font-size: 62%;
+  }
   .header {
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
+  }
+  .hero-image {
+    width: 25rem; /* Adjust the width as needed */
+    height: 30rem;
   }
   .serv-flx-con {
     grid-template-columns: 1fr;
+    padding: 5rem 2rem;
   }
   .skills-flx-con {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 3rem;
+    width: 90%;
+  }
+  .skills-flx {
+    padding: 1rem 2rem 0.5rem 2rem;
+    gap: 1rem;
   }
   .footer-social-icon {
     height: 3rem;
