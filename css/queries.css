@@ -84,9 +84,16 @@
   .header {
     padding: 2rem 1rem;
   }
+  .hero {
+    padding: 10rem 3rem;
+    margin-bottom: 2rem;
+  }
   .hero-image {
     width: 25rem; /* Adjust the width as needed */
     height: 30rem;
+  }
+  .services {
+    margin: 0 1rem;
   }
   .serv-flx-con {
     grid-template-columns: 1fr;
