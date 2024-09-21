@@ -30,9 +30,14 @@ html {
 .portfolio {
   color: #1c7ed6;
 
-  font-family: Playwrite Cuba;
   font-size: 3rem;
+  font-style: italic;
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
+
 .nav {
   /* padding: 0 10rem; */
   font-size: 1.6rem;
