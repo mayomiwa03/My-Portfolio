@@ -1,29 +1,3 @@
-// Function to highlight the active section in navigation
-window.addEventListener("scroll", () => {
-  const sections = document.querySelectorAll("section"); // All sections on the page
-  const navLinks = document.querySelectorAll(".nav-link"); // All navigation links
-
-  let currentSection = "";
-
-  // Loop through each section to see which one is currently in the viewport
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    const scrollPosition = window.pageYOffset;
-
-    if (scrollPosition >= sectionTop - sectionHeight / 3) {
-      currentSection = section.getAttribute("id");
-    }
-  });
-
-  // Remove the 'active' class from all links, then add it to the current one
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href").includes(currentSection)) {
-      link.classList.add("active");
-    }
-  });
-});
 // mobile nav
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
@@ -34,7 +8,70 @@ btnNavEl.addEventListener("click", function () {
 });
 // close the menu when a link is clicked
 navLinks.forEach((link) => {
-  link.addEventListener(click, function () {
+  link.addEventListener("click", function () {
     headerEl.classList.toggle("nav-open");
   });
 });
+
+// slider
+// let currentIndex = 0;
+// const slides = document.querySelectorAll(".slide");
+// const totalSlides = slides.length;
+// const slider = document.querySelector(".slider");
+// let autoSlideInterval;
+
+// function startAutoSlide() {
+//   autoSlideInterval = setInterval(() => {
+//     goToNextSlide();
+//   }, 3000);
+// }
+
+// function stopAutoSlide() {
+//   clearInterval(autoSlideInterval);
+// }
+
+// function goToNextSlide() {
+//   currentIndex = (currentIndex + 1) % totalSlides;
+//   updateSliderPosition();
+// }
+
+// function goToPrevSlide() {
+//   currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+//   updateSliderPosition();
+// }
+
+// function updateSliderPosition() {
+//   slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+// }
+
+// startAutoSlide();
+
+// let touchStartX = 0;
+// let touchEndX = 0;
+
+// slider.addEventListener("touchstart", function (e) {
+//   touchStartX = e.changedTouches[0].screenX;
+// });
+
+// slider.addEventListener("touchmove", function (e) {
+//   touchEndX = e.changedTouches[0].screenX;
+// });
+
+// slider.addEventListener("touchend", function () {
+//   handleSwipe();
+// });
+
+// function handleSwipe() {
+//   const swipeThreshold = 50;
+//   if (touchStartX - touchEndX > swipeThreshold) {
+//     stopAutoSlide();
+//     goToNextSlide();
+//     startAutoSlide();
+//   }
+
+//   if (touchEndX - touchStartX > swipeThreshold) {
+//     stopAutoSlide();
+//     goToPrevSlide();
+//     startAutoSlide();
+//   }
+// }

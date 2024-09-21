@@ -65,6 +65,11 @@
     filter: blur (10px);
     z-index: -1;
   }
+  .nav-link:link,
+  .nav-link:visited {
+    color: #1c7ed6;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     align-items: center;
@@ -73,9 +78,9 @@
     padding-top: 10rem;
     margin-bottom: 20rem;
   }
-  .skills-flx-con {
+  /* .skills-flx-con {
     width: 80%;
-  }
+  } */
 }
 @media (max-width: 75em) {
   html {
@@ -101,7 +106,7 @@
     gap: 0.8rem;
   }
   .services {
-    margin: 0 1rem;
+    margin: 2rem 2rem;
   }
   .serv-flx-con {
     display: flex;

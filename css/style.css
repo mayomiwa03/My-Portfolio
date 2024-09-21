@@ -77,9 +77,9 @@ html {
 /* Hero Section */
 .hero {
   display: grid;
-  grid-template-columns: 30fr 70fr;
+  grid-template-columns: 40fr 60fr;
   padding: 20rem 10rem;
-  gap: 5rem;
+  gap: 10rem;
   height: 100vh;
 }
 .hero-image {
@@ -162,6 +162,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 9px;
 }
 .serv-head {
   padding-top: 5rem;
@@ -222,6 +223,22 @@ html {
   /* padding-left: 5rem; */
   font-size: 3rem;
 }
+/* .slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  color: #000;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s;
+} */
 .skills-flx-con {
   margin: 0 auto;
   border-radius: 9px;
@@ -237,7 +254,7 @@ html {
 }
 
 .skills-flx {
-  background-color: #212529;
+  background-color: #000;
   margin: 0 auto;
   padding: 2rem 4rem 1rem 4rem;
   display: flex;
@@ -249,10 +266,10 @@ html {
 
   box-shadow: 3px 10px 3px rgba(0, 0, 0, 0.1);
 }
-.skills-flx:hover {
+/* .skills-flx:hover {
   transform: translateY(-2px);
   box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
-}
+} */
 .skills-img {
   width: 70px;
   height: 70px;
