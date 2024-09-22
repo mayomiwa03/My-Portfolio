@@ -19,7 +19,7 @@ html {
   margin: 0 auto;
 }
 .bluu {
-  color: #ffd43b;
+  color: #ffe066;
 }
 .header {
   padding: 2rem 10rem;
@@ -28,7 +28,7 @@ html {
   justify-content: space-between;
 }
 .portfolio {
-  color: #ffd43b;
+  color: #ffe066;
 
   font-size: 3rem;
   font-style: italic;
@@ -57,7 +57,7 @@ html {
 }
 .nav-link:hover,
 .nav-link:active {
-  color: #ffd43b;
+  color: #ffe066;
   text-decoration: underline;
   text-underline-offset: 0.8rem;
 }
@@ -73,7 +73,7 @@ html {
 .icon-mobile-nav {
   height: 4rem;
   width: 3.5rem;
-  color: #ffd43b;
+  color: #ffe066;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -117,7 +117,7 @@ html {
 }
 .social-link:link,
 .social-link:visited {
-  color: #ffd43b;
+  color: #ffe066;
   z-index: -;
 }
 .social-icon {
@@ -130,11 +130,11 @@ html {
 .hero-btn {
   font-size: 2rem;
   font-weight: 500;
-  border: 3px solid #ffd43b;
+  border: 3px solid #ffe066;
   border-radius: 9px;
   background: transparent;
   text-decoration: none;
-  color: #ffd43b;
+  color: #ffe066;
   position: relative;
   padding: 1rem 3rem;
   overflow: hidden;
@@ -142,7 +142,7 @@ html {
   cursor: pointer;
 }
 .hero-btn:hover {
-  border: 3px solid #ffd43b;
+  border: 3px solid #ffe066;
   color: #000;
   font-weight: 600;
 }
@@ -154,7 +154,7 @@ html {
   left: -30px;
   width: 0;
   height: 100%;
-  background-color: #ffd43b;
+  background-color: #ffe066;
   transform: skewX(35deg);
   z-index: -1;
   transition: width 0.5s;
@@ -195,8 +195,8 @@ html {
 }
 .serv-icon {
   padding: 1.5rem;
-  /* color: #fff; */
-  background-color: #ffd43b;
+  color: #000;
+  background-color: #ffe066;
   border-radius: 9px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -213,7 +213,7 @@ html {
 .serv-link:link,
 .serv-link:visited {
   text-decoration: none;
-  color: #ffd43b;
+  color: #ffe066;
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -250,7 +250,7 @@ html {
   margin: 0 auto;
   border-radius: 9px;
   width: 60%;
-  background-color: #ffd43b;
+  background-color: #ffe066;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 7%;
@@ -323,7 +323,7 @@ html {
 .projects-link:link,
 .projects-link:visited {
   text-decoration: none;
-  color: #ffd43b;
+  color: #ffe066;
   font-weight: 600;
   font-size: 1.8rem;
 }
@@ -336,7 +336,7 @@ html {
 /* FOoter */
 .footer {
   /* margin: 0 auto; */
-  background-color: #ffd43b;
+  background-color: #ffe066;
   padding: 5rem auto;
 }
 .footer-con {
