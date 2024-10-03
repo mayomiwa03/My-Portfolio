@@ -75,15 +75,53 @@ navLinks.forEach((link) => {
 //     startAutoSlide();
 //   }
 // }
-const textElements = [
-  "Web Developer",
-  "Web Designer",
-  "Problem Solver",
-  "Programmer",
-];
-let index = 0;
+// const textElements = [
+// "Web Developer",
+// "Web Designer",
+// "Problem Solver",
+// "Programmer",
+// ];
+// let index = 0;
 
-setInterval(() => {
-  document.getElementById("changing-text").innerHTML = textElements[index];
-  index = (index + 1) % textElements.length;
-}, 2000); // 2 seconds
+// setInterval(() => {
+//   document.getElementById("changing-text").innerHTML = textElements[index];
+//   index = (index + 1) % textElements.length;
+// }, 2000); // 2 seconds
+
+const texts = ["Web Developer", "Web Designer", "Problem Solver", "Programmer"];
+const typingSpeed = 100; // ms
+const deletingSpeed = 100; // ms
+const pauseDuration = 2000; // ms
+
+let index = 0;
+let textIndex = 0;
+let typing = true;
+
+function animate() {
+  const textElement = document.getElementById("typing-animation");
+
+  if (typing) {
+    textElement.textContent = texts[index].slice(0, textIndex + 1);
+    textIndex++;
+
+    if (textIndex === texts[index].length) {
+      typing = false;
+      setTimeout(() => {
+        textIndex = 0;
+        typing = true;
+        index = (index + 1) % texts.length;
+      }, pauseDuration);
+    }
+  } else {
+    textElement.textContent = texts[index].slice(0, textIndex);
+    textIndex--;
+
+    if (textIndex === -1) {
+      typing = true;
+    }
+  }
+
+  setTimeout(animate, typing ? typingSpeed : deletingSpeed);
+}
+
+animate();
