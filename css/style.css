@@ -86,6 +86,7 @@ html {
   padding: 20rem 10rem;
   gap: 5rem;
   height: 100vh;
+  overflow: hidden;
 }
 .hero-image {
   width: 35rem; /* Adjust the width as needed */
