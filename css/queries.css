@@ -94,9 +94,13 @@
     padding: 1rem 1rem;
   }
   .hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 1rem 10rem 1rem;
+    margin-bottom: 2rem;
+    height: 90rem;
+    /* margin-top: 10rem; */
   }
   .hero-image {
     width: 25rem;
@@ -104,6 +108,12 @@
   }
   .hero-wu {
     gap: 0.8rem;
+  }
+  .h-h {
+    font-size: 2rem;
+  }
+  .h-hh {
+    font-size: 2rem;
   }
   .services {
     margin: 2rem 2rem;
