@@ -142,8 +142,8 @@
   }
   .footer-navlist {
     grid-template-columns: repeat(4, 1fr);
-    /* column-gap: 2rem; */
-    row-gap: 4rem;
+    column-gap: 2rem;
+    row-gap: 3rem;
   }
   .privacy {
     /* background-color: antiquewhite; */
