@@ -19,7 +19,7 @@ html {
   margin: 0 auto;
 }
 .bluu {
-  color: #ffe066;
+  color: #da77f2;
 }
 .header {
   padding: 2rem 10rem;
@@ -28,7 +28,7 @@ html {
   justify-content: space-between;
 }
 .portfolio {
-  color: #ffe066;
+  color: #da77f2;
 
   font-size: 3rem;
   font-style: italic;
@@ -73,7 +73,7 @@ html {
 .icon-mobile-nav {
   height: 4rem;
   width: 3.5rem;
-  color: #ffe066;
+  color: #da77f2;
 }
 
 .icon-mobile-nav[name="close-outline"] {
@@ -84,7 +84,7 @@ html {
   display: grid;
   grid-template-columns: 40fr 60fr;
   padding: 20rem 10rem;
-  gap: 10rem;
+  gap: 15rem;
   height: 100vh;
 }
 .hero-image {
@@ -92,6 +92,8 @@ html {
   height: 50rem; /* Adjust the height as needed to create the oval effect */
   border-radius: 50%; /* Makes the image oval */
   object-fit: cover; /* Ensures the image covers the oval shape */
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 .hero-wu {
   display: flex;
@@ -117,8 +119,8 @@ html {
 }
 .social-link:link,
 .social-link:visited {
-  color: #ffe066;
-  z-index: -;
+  color: #da77f2;
+  z-index: 2;
 }
 .social-icon {
   height: 2.4rem;
@@ -129,12 +131,12 @@ html {
 }
 .hero-btn {
   font-size: 2rem;
-  font-weight: 500;
-  border: 3px solid #ffe066;
+  font-weight: 600;
+  border: 3px solid #da77f2;
   border-radius: 9px;
   background: transparent;
   text-decoration: none;
-  color: #ffe066;
+  color: #da77f2;
   position: relative;
   padding: 1rem 3rem;
   overflow: hidden;
@@ -142,7 +144,7 @@ html {
   cursor: pointer;
 }
 .hero-btn:hover {
-  border: 3px solid #ffe066;
+  border: 3px solid #da77f2;
   color: #000;
   font-weight: 600;
 }
@@ -154,7 +156,7 @@ html {
   left: -30px;
   width: 0;
   height: 100%;
-  background-color: #ffe066;
+  background-color: #da77f2;
   transform: skewX(35deg);
   z-index: -1;
   transition: width 0.5s;
@@ -196,7 +198,7 @@ html {
 .serv-icon {
   padding: 1.5rem;
   color: #000;
-  background-color: #ffe066;
+  background-color: #da77f2;
   border-radius: 9px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -213,7 +215,7 @@ html {
 .serv-link:link,
 .serv-link:visited {
   text-decoration: none;
-  color: #ffe066;
+  color: #da77f2;
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -250,7 +252,7 @@ html {
   margin: 0 auto;
   border-radius: 9px;
   width: 60%;
-  background-color: #ffe066;
+  background-color: #da77f2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 7%;
@@ -323,7 +325,7 @@ html {
 .projects-link:link,
 .projects-link:visited {
   text-decoration: none;
-  color: #ffe066;
+  color: #da77f2;
   font-weight: 600;
   font-size: 1.8rem;
 }
@@ -336,7 +338,7 @@ html {
 /* FOoter */
 .footer {
   /* margin: 0 auto; */
-  background-color: #ffe066;
+  background-color: #da77f2;
   padding: 5rem auto;
 }
 .footer-con {

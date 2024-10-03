@@ -67,11 +67,11 @@
   }
   .nav-link:link,
   .nav-link:visited {
-    color: #f08c00;
+    color: #862e9c;
   }
 
   .nav-open .icon-mobile-nav {
-    color: #f08c00;
+    color: #862e9c;
   }
   .hero {
     grid-template-columns: 1fr;
