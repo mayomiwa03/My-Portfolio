@@ -75,3 +75,15 @@ navLinks.forEach((link) => {
 //     startAutoSlide();
 //   }
 // }
+const textElements = [
+  "Web Developer",
+  "Web Designer",
+  "Problem Solver",
+  "Programmer",
+];
+let index = 0;
+
+setInterval(() => {
+  document.getElementById("changing-text").innerHTML = textElements[index];
+  index = (index + 1) % textElements.length;
+}, 2000); // 2 seconds
