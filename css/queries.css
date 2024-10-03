@@ -94,13 +94,9 @@
     padding: 1rem 1rem;
   }
   .hero {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    padding: 5rem 1rem 10rem 1rem;
-    margin-bottom: 2rem;
-    height: 90rem;
-    /* margin-top: 10rem; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
   .hero-image {
     width: 25rem;
@@ -127,13 +123,17 @@
     padding: 1rem 2rem 0.5rem 2rem;
     gap: 1rem;
   }
+  .footer-con {
+    padding: 2rem;
+  }
   .footer-social-icon {
     height: 3rem;
     width: 3rem;
   }
   .footer-navlist {
     grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
+    /* column-gap: 2rem; */
+    row-gap: 4rem;
   }
   .privacy {
     /* background-color: antiquewhite; */
