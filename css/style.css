@@ -82,14 +82,14 @@ html {
 /* Hero Section */
 .hero {
   display: grid;
-  grid-template-columns: 40fr 60fr;
+  grid-template-columns: 35fr 65fr;
   padding: 20rem 10rem;
-  gap: 15rem;
+  gap: 5rem;
   height: 100vh;
 }
 .hero-image {
-  width: 40rem; /* Adjust the width as needed */
-  height: 50rem; /* Adjust the height as needed to create the oval effect */
+  width: 35rem; /* Adjust the width as needed */
+  height: 40rem; /* Adjust the height as needed to create the oval effect */
   border-radius: 50%; /* Makes the image oval */
   object-fit: cover; /* Ensures the image covers the oval shape */
   margin-bottom: 5rem;
