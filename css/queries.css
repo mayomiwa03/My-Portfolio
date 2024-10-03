@@ -135,15 +135,16 @@
   }
   .footer-con {
     padding: 2rem;
+    gap: 1rem;
   }
   .footer-social-icon {
     height: 3rem;
     width: 3rem;
   }
   .footer-navlist {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-    row-gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .privacy {
     /* background-color: antiquewhite; */
