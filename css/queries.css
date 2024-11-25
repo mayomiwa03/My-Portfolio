@@ -1,78 +1,54 @@
 @media (max-width: 93em) {
-  .btn-mobile-nav {
-    display: block;
-    z-index: 9999;
-  }
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 1rem;
+    /* border: 1px solid #ddd; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: 100vw;
+    gap: 3rem;
 
-  .nav {
-    background-color: rgba(255, 255, 255, 0.8);
-    font-weight: 600;
+    background: none;
+    padding-top: 10rem;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(10px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
+    z-index: 10;
+  }
 
+  .nav-list li {
+    padding-left: 1rem;
+    list-style: none;
+    margin-bottom: 1rem;
+
+    width: 22rem;
+  }
+  .hamburger {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in;
-
-    /* hide nav */
-    /* allows no transition */
-    /* display: none; */
-
-    /* 1st hide it visually */
-    opacity: 0;
-
-    /* 2nd make it unaccessible to mouse and keyboards*/
-    pointer-events: none;
-
-    /* 3rd hide it from screen readers */
-    visibility: hidden;
-
-    width: 0;
-  }
-  .nav-open .nav {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    width: 100%;
-    transform: translateX(0);
-  }
-  .nav-list {
     flex-direction: column;
-    gap: 10rem;
-  }
+    justify-content: space-between;
+    height: 15px;
+    cursor: pointer;
 
-  .nav-open .icon-mobile-nav[name="close-outline"] {
-    display: block;
-  }
-  .nav-open .icon-mobile-nav[name="menu-outline"] {
-    display: none;
-  }
-  .nav-open::before {
-    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
-    filter: blur (10px);
-    z-index: -1;
-  }
-  .nav-link:link,
-  .nav-link:visited {
-    color: #862e9c;
+    right: 2rem;
+    border: solid 1px #000;
+    overflow: hidden;
+    z-index: 10;
+    background-color: transparent;
   }
 
-  .nav-open .icon-mobile-nav {
-    color: #862e9c;
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    /* border: none; */
+    /* background-color: #fff; */
   }
+
   .hero {
     grid-template-columns: 1fr;
     align-items: center;

@@ -62,22 +62,25 @@ html {
   text-underline-offset: 0.8rem;
 }
 /* mobile nav */
-.btn-mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-
-  display: none;
+.hamburger.active {
+  height: 18.5px;
+}
+.hamburger.active .hamburger-top {
+  transform: rotate(45deg) translate(5px, 5px);
+  z-index: 3;
 }
 
-.icon-mobile-nav {
-  height: 4rem;
-  width: 3.5rem;
-  color: #da77f2;
+.hamburger.active .hamburger-middle {
+  opacity: 0;
 }
 
-.icon-mobile-nav[name="close-outline"] {
-  display: none;
+.hamburger.active .hamburger-bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+  z-index: 3;
+}
+
+.nav-list.active {
+  display: block;
 }
 /* Hero Section */
 .hero {
@@ -302,6 +305,12 @@ html {
   padding-left: 5rem;
   font-size: 3rem;
 }
+.p-w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
 .projects-con {
   display: flex;
   align-items: center;
@@ -316,8 +325,8 @@ html {
 .projects-img {
   /* border: 4px solid #1c7ed6; */
   border-radius: 9px;
-  width: 36rem;
-  height: 48rem;
+  width: 24rem;
+  height: 36rem;
 }
 .projects-img:hover {
   box-shadow: 4px 10px 5px rgb(128, 125, 125);

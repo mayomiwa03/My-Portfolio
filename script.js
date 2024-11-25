@@ -1,16 +1,24 @@
-// mobile nav
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
-const navLinks = document.querySelectorAll(".nav-link");
+// Hamburger menu toggle
+"use strict";
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-list");
+const navItems = document.querySelectorAll(".nav-list li"); // Select all list items
 
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });
-// close the menu when a link is clicked
-navLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    headerEl.classList.toggle("nav-open");
-  });
+// Close nav when clicking outside list items
+document.addEventListener("click", (event) => {
+  const isClickOnHamburger = hamburger.contains(event.target);
+  const isClickOnNavItem = Array.from(navItems).some((item) =>
+    item.contains(event.target)
+  );
+
+  if (!isClickOnHamburger && !isClickOnNavItem) {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
 });
 
 // slider
@@ -88,40 +96,40 @@ navLinks.forEach((link) => {
 //   index = (index + 1) % textElements.length;
 // }, 2000); // 2 seconds
 
-const texts = ["Web Developer", "Web Designer", "Problem Solver", "Programmer"];
-const typingSpeed = 100; // ms
-const deletingSpeed = 100; // ms
-const pauseDuration = 2000; // ms
+// const texts = ["Web Developer", "Web Designer", "Problem Solver", "Programmer"];
+// const typingSpeed = 100; // ms
+// const deletingSpeed = 100; // ms
+// const pauseDuration = 2000; // ms
 
-let index = 0;
-let textIndex = 0;
-let typing = true;
+// let index = 0;
+// let textIndex = 0;
+// let typing = true;
 
-function animate() {
-  const textElement = document.getElementById("typing-animation");
+// function animate() {
+//   const textElement = document.getElementById("typing-animation");
 
-  if (typing) {
-    textElement.textContent = texts[index].slice(0, textIndex + 1);
-    textIndex++;
+//   if (typing) {
+//     textElement.textContent = texts[index].slice(0, textIndex + 1);
+//     textIndex++;
 
-    if (textIndex === texts[index].length) {
-      typing = false;
-      setTimeout(() => {
-        textIndex = 0;
-        typing = true;
-        index = (index + 1) % texts.length;
-      }, pauseDuration);
-    }
-  } else {
-    textElement.textContent = texts[index].slice(0, textIndex);
-    textIndex--;
+//     if (textIndex === texts[index].length) {
+//       typing = false;
+//       setTimeout(() => {
+//         textIndex = 0;
+//         typing = true;
+//         index = (index + 1) % texts.length;
+//       }, pauseDuration);
+//     }
+//   } else {
+//     textElement.textContent = texts[index].slice(0, textIndex);
+//     textIndex--;
 
-    if (textIndex === -1) {
-      typing = true;
-    }
-  }
+//     if (textIndex === -1) {
+//       typing = true;
+//     }
+//   }
 
-  setTimeout(animate, typing ? typingSpeed : deletingSpeed);
-}
+//   setTimeout(animate, typing ? typingSpeed : deletingSpeed);
+// }
 
-animate();
+// animate();

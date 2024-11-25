@@ -6,7 +6,7 @@
     <title>Daniel's portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -18,14 +18,15 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <script defer src="script.js"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="icon" href="imgs/hero-img.jpg" />
-
-
   </head>
   <body class="body">
     <header class="header">
@@ -36,16 +37,16 @@
           <li><a href="#services" class="nav-link">Services</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link"> Projects </a></li>
-          
         </ul>
+        <button class="hamburger">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </nav>
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
     </header>
     <section class="hero" id="hero">
-      <div >
+      <div>
         <img
           class="hero-image"
           src="imgs/hero-img.jpg"
@@ -54,7 +55,9 @@
       </div>
       <div class="hero-wu">
         <h3 class="h-h">Hi , I am <span class="bluu">Daniel Adeagbo</span></h3>
-        <h2 class="h-hh">I'm a <span class="bluu " id="typing-animation">Web Developer</span></h2>
+        <h2 class="h-hh">
+          I'm a <span class="bluu" id="typing-animation">Web Developer</span>
+        </h2>
         <p class="h-t">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           recusandae ducimus dicta, ipsam at temporibus maxime beatae adipisci
@@ -134,62 +137,102 @@
     </section>
     <section class="skills" id="skills">
       <h2 class="ski-head">Skills</h2>
-   
+
       <div class="skills-flx-con">
-        
-            <div class="skills-flx">
-              <img class="skills-img" src="imgs/html-logo.png" alt="html logo"/>
-              <p class="skill-text">HTML 5</p>
-            </div>
-            <div class="skills-flx">
-              <img class="skills-img" src="imgs/css3-logo.jpg" alt="css logo"/>
-              <p class="skill-text">CSS 3</p>
-            </div>
-            <div class="skills-flx">
-              <img class="skills-img" src="imgs/tailwind-css-logo.jpg" alt="Tailwind css logo"/>
-              <p class="skill-text">Tailwind CSS</p>
-            </div>
-          <div class="skills-flx">
-            <img class="skills-img" src="imgs/JavaScript-logo.png" alt="JavaScript logo" />
-            <p class="skill-text">JavaScript</p>
-          </div>
+        <div class="skills-flx">
+          <img class="skills-img" src="imgs/html-logo.png" alt="html logo" />
+          <p class="skill-text">HTML 5</p>
         </div>
+        <div class="skills-flx">
+          <img class="skills-img" src="imgs/css3-logo.jpg" alt="css logo" />
+          <p class="skill-text">CSS 3</p>
+        </div>
+        <div class="skills-flx">
+          <img
+            class="skills-img"
+            src="imgs/tailwind-css-logo.jpg"
+            alt="Tailwind css logo"
+          />
+          <p class="skill-text">Tailwind CSS</p>
+        </div>
+        <div class="skills-flx">
+          <img
+            class="skills-img"
+            src="imgs/JavaScript-logo.png"
+            alt="JavaScript logo"
+          />
+          <p class="skill-text">JavaScript</p>
+        </div>
+      </div>
     </section>
     <section class="projects" id="projects">
       <h2 class="projects-head">My Recent Projects</h2>
+      <div class="p-w">
         <div class="projects-con">
           <div class="projects-flx">
-            <img class="projects-img" src="imgs/Another-Inc.png" alt="another-inc website"/>
+            <img
+              class="projects-img"
+              src="imgs/Another-Inc.png"
+              alt="another-inc website"
+            />
             <a class="projects-link" href="https://another-inc.vercel.app/"
               >Visit Website</a
             >
           </div>
         </div>
-      </h2>
+
+        <div class="projects-con">
+          <div class="projects-flx">
+            <img
+              class="projects-img"
+              src="imgs/Builders-logo_Main.jpg"
+              alt="Builders website"
+            />
+            <a class="projects-link" href="https://builder-com.vercel.app/"
+              >Visit Website</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer">
       <div class="footer-con">
-        <div class=footer-socials>
+        <div class="footer-socials">
           <ul class="footer-social-links">
             <li>
               <a
                 class="footer-social-link"
                 href="https://www.instagram.com/_oluwamayomiwa_"
+                target="_blank"
               >
-                <ion-icon class="footer-social-icon" name="logo-instagram"></ion-icon>
+                <ion-icon
+                  class="footer-social-icon"
+                  name="logo-instagram"
+                ></ion-icon>
               </a>
             </li>
             <li>
               <a
                 class="footer-social-link"
                 href="https://www.facebook.com/profile.php?id=100089571015945&mibextid=LQQJ4d"
+                target="_blank"
               >
-                <ion-icon class="footer-social-icon" name="logo-facebook"></ion-icon>
+                <ion-icon
+                  class="footer-social-icon"
+                  name="logo-facebook"
+                ></ion-icon>
               </a>
             </li>
             <li>
-              <a class="footer-social-link" href="https://x.com/oluwamayomiwa03?s=21">
-                <ion-icon class="footer-social-icon" name="logo-twitter"></ion-icon>
+              <a
+                class="footer-social-link"
+                href="https://x.com/cutecakegrabber?s=21"
+                target="_blank"
+              >
+                <ion-icon
+                  class="footer-social-icon"
+                  name="logo-twitter"
+                ></ion-icon>
               </a>
             </li>
           </ul>
@@ -201,15 +244,17 @@
               <li><a href="#" class="footer-navlink">Services</a></li>
               <li><a href="#" class="footer-navlink">About</a></li>
               <li><a href="#" class="footer-navlink">Contact</a></li>
-              <li><a href="#" class="footer-navlink  privacy">Privacy Policy</a></li>
+              <li>
+                <a href="#" class="footer-navlink privacy">Privacy Policy</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div>
-          <a class="btt"  href="#">back to top</a>
+          <a class="btt" href="#">back to top</a>
         </div>
         <div class="footer-flxx">
-         <p class="copyright"> &copy; Daniel Adeagbo | All right reserved </p>
+          <p class="copyright">&copy; Daniel Adeagbo | All right reserved</p>
         </div>
       </div>
     </footer>
