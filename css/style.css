@@ -18,6 +18,18 @@ html {
   max-width: 130rem;
   margin: 0 auto;
 }
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease-out; /* Smooth follow effect */
+}
+
 .bluu {
   color: #da77f2;
 }
@@ -62,6 +74,9 @@ html {
   text-underline-offset: 0.8rem;
 }
 /* mobile nav */
+.hamburger {
+  display: none;
+}
 .hamburger.active {
   height: 18.5px;
 }
@@ -91,6 +106,31 @@ html {
   height: 100vh;
   overflow: hidden;
 }
+/* Set up the section that will have the background images */
+.auto-slider {
+  width: 100%;
+  /* height: 100vh; Full viewport height */
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 12s infinite; /* 12s is the duration for the background to change */
+}
+
+/* Define the animation */
+@keyframes changeBackground {
+  0% {
+    background-image: url("imgs/hero-bg1.avif"); /* Image 1 */
+  }
+  33% {
+    background-image: url("imgs/hero-bg2.avif"); /* Image 2 */
+  }
+  66% {
+    background-image: url("imgs/hero-bg3.avif"); /* Image 3 */
+  }
+  100% {
+    background-image: url("imgs/hero-bg4.jpg"); /* Reset back to Image 1 */
+  }
+}
+
 .hero-image {
   width: 35rem; /* Adjust the width as needed */
   height: 40rem; /* Adjust the height as needed to create the oval effect */
@@ -168,6 +208,7 @@ html {
 .hero-btn:hover::before {
   width: 130%;
 }
+
 /* Services */
 .services {
   background-color: #212529;
@@ -195,6 +236,17 @@ html {
   gap: 3rem;
   padding: 4rem 2rem;
   border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  /* border-radius: 16px; */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3); /*Inner border for depth
+}
+.serv-flx:hover {
+  transform: scale(1.05);
+  /* height: 320px; */
 }
 .serv-icon-wrap:hover {
   transform: translateY(-2px);
@@ -409,9 +461,4 @@ html {
 .copyright {
   color: #000;
   font-weight: 600;
-}
-
-#typing-animation {
-  font-family: monospace;
-  white-space: pre;
 }

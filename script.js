@@ -96,40 +96,66 @@ document.addEventListener("click", (event) => {
 //   index = (index + 1) % textElements.length;
 // }, 2000); // 2 seconds
 
-// const texts = ["Web Developer", "Web Designer", "Problem Solver", "Programmer"];
-// const typingSpeed = 100; // ms
-// const deletingSpeed = 100; // ms
-// const pauseDuration = 2000; // ms
+const texts = ["Web Developer", "Web Designer", "Problem Solver", "Programmer"];
+const typingSpeed = 100; // ms
+const deletingSpeed = 100; // ms
+const pauseDuration = 2000; // ms
 
-// let index = 0;
-// let textIndex = 0;
-// let typing = true;
+let index = 0;
+let textIndex = 0;
+let typing = true;
 
-// function animate() {
-//   const textElement = document.getElementById("typing-animation");
+function animate() {
+  const textElement = document.getElementById("typing-animation");
 
-//   if (typing) {
-//     textElement.textContent = texts[index].slice(0, textIndex + 1);
-//     textIndex++;
+  if (typing) {
+    // Typing logic
+    textElement.textContent = texts[index].slice(0, textIndex + 1);
+    textIndex++;
 
-//     if (textIndex === texts[index].length) {
-//       typing = false;
-//       setTimeout(() => {
-//         textIndex = 0;
-//         typing = true;
-//         index = (index + 1) % texts.length;
-//       }, pauseDuration);
-//     }
-//   } else {
-//     textElement.textContent = texts[index].slice(0, textIndex);
-//     textIndex--;
+    if (textIndex === texts[index].length) {
+      typing = false; // Switch to deleting after typing is complete
+      setTimeout(() => {
+        typing = false;
+      }, pauseDuration);
+    }
+  } else {
+    // Deleting logic
+    textElement.textContent = texts[index].slice(0, textIndex - 1);
+    textIndex--;
 
-//     if (textIndex === -1) {
-//       typing = true;
-//     }
-//   }
+    if (textIndex === 0) {
+      typing = true; // Switch back to typing for the next word
+      index = (index + 1) % texts.length; // Move to the next text
+    }
+  }
 
-//   setTimeout(animate, typing ? typingSpeed : deletingSpeed);
-// }
+  setTimeout(animate, typing ? typingSpeed : deletingSpeed);
+}
 
-// animate();
+// Start the animation
+animate();
+
+const cursor = document.getElementById("cursor");
+
+// Update the position of the circle based on mouse movement
+document.addEventListener("mousemove", (event) => {
+  const { clientX, clientY } = event;
+
+  // Move the cursor circle to the mouse position
+  cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+});
+
+//
+
+const images = ["image1.jpg", "image2.jpg", "image3.jpg"]; // Array of image paths
+let index = 0;
+const slider = document.getElementById("slider");
+
+function changeBackground() {
+  slider.style.backgroundImage = `url(${images[index]})`; // Set background image
+  index = (index + 1) % images.length; // Move to the next image, reset to 0 after the last image
+}
+
+setInterval(changeBackground, 4000); // Change background every 4 seconds
+changeBackground(); // Set the initial background
