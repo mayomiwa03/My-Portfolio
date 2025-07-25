@@ -138,24 +138,24 @@ animate();
 
 const cursor = document.getElementById("cursor");
 
-// Update the position of the circle based on mouse movement
-document.addEventListener("mousemove", (event) => {
-  const { clientX, clientY } = event;
+// // Update the position of the circle based on mouse movement
+// document.addEventListener("mousemove", (event) => {
+//   const { clientX, clientY } = event;
 
-  // Move the cursor circle to the mouse position
-  cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
-});
+//   // Move the cursor circle to the mouse position
+//   cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+// });
 
-//
+// //
 
-const images = ["image1.jpg", "image2.jpg", "image3.jpg"]; // Array of image paths
-let index = 0;
-const slider = document.getElementById("slider");
+// const images = ["image1.jpg", "image2.jpg", "image3.jpg"]; // Array of image paths
+// let index = 0;
+// const slider = document.getElementById("slider");
 
-function changeBackground() {
-  slider.style.backgroundImage = `url(${images[index]})`; // Set background image
-  index = (index + 1) % images.length; // Move to the next image, reset to 0 after the last image
-}
+// function changeBackground() {
+//   slider.style.backgroundImage = `url(${images[index]})`; // Set background image
+//   index = (index + 1) % images.length; // Move to the next image, reset to 0 after the last image
+// }
 
-setInterval(changeBackground, 4000); // Change background every 4 seconds
-changeBackground(); // Set the initial background
+// setInterval(changeBackground, 4000); // Change background every 4 seconds
+// changeBackground(); // Set the initial background
